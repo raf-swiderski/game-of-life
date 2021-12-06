@@ -6,5 +6,7 @@ class Board {
       { id: "a3", status: "off" }]
     }
 
-
+    parameters(cells) {
+      cells.forEach((x, i) => this.cells[i] = x);
+    }
 }

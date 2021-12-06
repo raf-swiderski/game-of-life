@@ -16,4 +16,20 @@ describe("Board", function() {
 
         ]);
     })
+
+    it("has a function that can lets the user edit the status, before the first turn", function() {
+        board.parameters([
+            { id: "a1", status: "on" },
+            { id: "a2", status: "off" },
+            { id: "a3", status: "on" }
+
+        ])
+        expect(board.cells).toEqual([
+            { id: "a1", status: "on" },
+            { id: "a2", status: "off" },
+            { id: "a3", status: "on" }
+
+        ]);
+        
+    })
 });
