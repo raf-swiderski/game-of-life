@@ -1,12 +1,121 @@
 class Board {
     constructor() {
-      this.turn = 0;
-      this.cells = [{ id: "a1", status: "off" },
-      { id: "a2", status: "off" },
-      { id: "a3", status: "off" }]
+        this.cells = [
+            { "id": "a1", "status": "off" }, 
+            { "id": "a2", "status": "off" },
+            { "id": "a3", "status": "off" },
+            { "id": "a4", "status": "off" },
+            { "id": "a5", "status": "off" },
+            { "id": "a6", "status": "off" },
+            { "id": "a7", "status": "off" },
+            { "id": "a8", "status": "off" },
+            { "id": "a9", "status": "off" },
+            { "id": "a10", "status": "off" },
+
+            { "id": "b1", "status": "off" },
+            { "id": "b2", "status": "off" },
+            { "id": "b3", "status": "off" },
+            { "id": "b4", "status": "off" },
+            { "id": "b5", "status": "off" },
+            { "id": "b6", "status": "off" },
+            { "id": "b7", "status": "off" },
+            { "id": "b8", "status": "off" },
+            { "id": "b9", "status": "off" },
+            { "id": "b10", "status": "off" },
+
+            { "id": "c1", "status": "off" },
+            { "id": "c2", "status": "off" },
+            { "id": "c3", "status": "off" },
+            { "id": "c4", "status": "off" },
+            { "id": "c5", "status": "off" },
+            { "id": "c6", "status": "off" },
+            { "id": "c7", "status": "off" },
+            { "id": "c8", "status": "off" },
+            { "id": "c9", "status": "off" },
+            { "id": "c10", "status": "off" },
+
+            { "id": "d1", "status": "off" },
+            { "id": "d2", "status": "off" },
+            { "id": "d3", "status": "off" },
+            { "id": "d4", "status": "off" },
+            { "id": "d5", "status": "off" },
+            { "id": "d6", "status": "off" },
+            { "id": "d7", "status": "off" },
+            { "id": "d8", "status": "off" },
+            { "id": "d9", "status": "off" },
+            { "id": "d10", "status": "off" },
+
+            { "id": "e1", "status": "off" },
+            { "id": "e2", "status": "off" },
+            { "id": "e3", "status": "off" },
+            { "id": "e4", "status": "off" },
+            { "id": "e5", "status": "off" },
+            { "id": "e6", "status": "off" },
+            { "id": "e7", "status": "off" },
+            { "id": "e8", "status": "off" },
+            { "id": "e9", "status": "off" },
+            { "id": "e10", "status": "off" },
+
+            { "id": "f1", "status": "off" },
+            { "id": "f2", "status": "off" },
+            { "id": "f3", "status": "off" },
+            { "id": "f4", "status": "off" },
+            { "id": "f5", "status": "off" },
+            { "id": "f6", "status": "off" },
+            { "id": "f7", "status": "off" },
+            { "id": "f8", "status": "off" },
+            { "id": "f9", "status": "off" },
+            { "id": "f10", "status": "off" },
+
+            { "id": "g1", "status": "off" },
+            { "id": "g2", "status": "off" },
+            { "id": "g3", "status": "off" },
+            { "id": "g4", "status": "off" },
+            { "id": "g5", "status": "off" },
+            { "id": "g6", "status": "off" },
+            { "id": "g7", "status": "off" },
+            { "id": "g8", "status": "off" },
+            { "id": "g9", "status": "off" },
+            { "id": "g10", "status": "off" },
+
+            { "id": "h1", "status": "off" },
+            { "id": "h2", "status": "off" },
+            { "id": "h3", "status": "off" },
+            { "id": "h4", "status": "off" },
+            { "id": "h5", "status": "off" },
+            { "id": "h6", "status": "off" },
+            { "id": "h7", "status": "off" },
+            { "id": "h8", "status": "off" },
+            { "id": "h9", "status": "off" },
+            { "id": "h10", "status": "off" },
+
+            { "id": "i1", "status": "off" },
+            { "id": "i2", "status": "off" },
+            { "id": "i3", "status": "off" },
+            { "id": "i4", "status": "off" },
+            { "id": "i5", "status": "off" },
+            { "id": "i6", "status": "off" },
+            { "id": "i7", "status": "off" },
+            { "id": "i8", "status": "off" },
+            { "id": "i9", "status": "off" },
+            { "id": "i10", "status": "off" },
+
+            { "id": "j1", "status": "off" },
+            { "id": "j2", "status": "off" },
+            { "id": "j3", "status": "off" },
+            { "id": "j4", "status": "off" },
+            { "id": "j5", "status": "off" },
+            { "id": "j6", "status": "off" },
+            { "id": "j7", "status": "off" },
+            { "id": "j8", "status": "off" },
+            { "id": "j9", "status": "off" },
+            { "id": "j10", "status": "off" }
+        ]
     }
 
-    parameters(cells) {
-      cells.forEach((x, i) => this.cells[i] = x);
+    returnCells() {
+        return this.cells;
     }
+
+
 }
