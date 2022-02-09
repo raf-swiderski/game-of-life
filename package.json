@@ -1,0 +1,26 @@
+{
+  "name": "game-of-life",
+  "version": "1.0.0",
+  "description": "The Game of life is a zero player game developed in the 70's by John Horton Conway. Check out the Wikipedia article for a full description. The evolving state of the game is determined by the initial configuration - some configurations become infinitely evolving constellations, others eventually evolve into a stable patterns, whilst others die off completely. It is commonly used as a tech test as it can be solved in many different ways that clearly show the level of the programmer.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raf-swiderski/game_of_life.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raf-swiderski/game_of_life/issues"
+  },
+  "homepage": "https://github.com/raf-swiderski/game_of_life#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  }
+}

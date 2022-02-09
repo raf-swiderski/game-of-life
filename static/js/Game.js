@@ -1,3 +1,14 @@
+function gameTest() {
+  var game = new Game
+  
+
+
+  
+  const div1 = document.getElementById("div1")
+  div1.innerHTML = JSON.stringify(game.cells)
+
+}
+
 class Game {
   constructor() {
     let board = new Board;
@@ -26,7 +37,7 @@ class Game {
     
     console.log("cells after the calculation of neighbours")
       
-
+    
 
   }
 }
