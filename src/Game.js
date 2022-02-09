@@ -1,86 +1,32 @@
 class Game {
-    constructor() {
-      let board = new Board;
+  constructor() {
+    let board = new Board;
 
-      this.turn = 0;
-      this.cells = board.cells
-    }
+    this.turn = 0;
+    this.cells = board.cells
+  }
 
-    parameters(cells) {
-      this.cells = cells;
-    }
+  parameters(myParams) {
+    console.log("myParams in the parameter function")
+    console.log(myParams)
+    this.cells = myParams;
+  }
 
+  passTurn(cells) {
+    
+    //functions that checks the neighbours then returns the amount of neighbours - because the rules are the same for each cell. 
+    // var cells = cells;
 
-
-    passTurn(cells) {
-      for (let i = 0; i < cells.length; i++) {
-        
-        //checking the neighbours
-
-        if (cells[i]["status"] === "on") {
-          //testing #12
-          var neighbours = [];
-
- 
-          //#1
-          if (cells[i - 11]["status"] === "on") {
-            console.log('this is test 1')
-            neighbours.push(1);
-          }
-
-          if (cells[i - 10]["status"] === "on") {
-            neighbours.push(1);
-          }
-          if (cells[i - 9]["status"] === "on") {
-            neighbours.push(1);
-          }
-          if (cells[i - 1]["status"] === "on") {
-            neighbours.push(1);
-          }
-          if (cells[i + 1]["status"] === "on") {
-            neighbours.push(1);
-          }
-          if (cells[i + 9]["status"] === "on") {
-            neighbours.push(1);
-          }
-          if (cells[i + 10]["status"] === "on") {
-            neighbours.push(1);
-          }
-          if (cells[i + 11]["status"] === "on") {
-            neighbours.push(1);
-          }
-
-          console.log(neighbours)
-          
-          let neighbourhood = neighbours.reduce(function summarize(sum, number) {
-            let updatedSum = sum + number;
-            return updatedSum
-          }, 0);
-          
-          console.log("here's the neighbourhood:")
-          console.log(neighbourhood)
-
-
-          if (neighbourhood === 0) {
-            cells[i]["status"] = "off";
-          }
-        }
-      }
-
-
-        /*
-      cells.forEach((cell, index) => 
+    // for (let i = 0; i < cells.length; i++) {}
       
-      console.log(cell['status'])
+    console.log(this.cells)
+    let cell = new Cell(0);
+    this.cells[0] = cell.calculateNeighbourhood(cells);
     
-      // if (cell["status"] === "on") {
     
-      //   cell['status'] = "off"
-      // } 
+    console.log("cells after the calculation of neighbours")
+      
 
 
-      );
-      */
-    }
-
+  }
 }
